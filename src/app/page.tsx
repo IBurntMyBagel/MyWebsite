@@ -1,5 +1,6 @@
 import Image from "next/image";
 import styles from "./page.module.css";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -10,20 +11,20 @@ export default function Home() {
         <nav>
           <ul className = {styles.navList}>
             <li>
-              <a
+              <Link
                 className = {styles.navItem}  
                 href= "/"
               >
                 Home
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 className = {styles.navItem}
                 href = "/testingpage"
                 >
                   Testing Page
-                </a> 
+                </Link> 
             </li>
             <li>
               <a

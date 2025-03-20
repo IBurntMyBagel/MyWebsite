@@ -24,3 +24,16 @@
     gap: 64px;
     font-family: var(--font-geist-sans);
   }
+
+
+.main {
+    color: var(--testingcolor5);
+}
+
+.main h1{
+    color: var(--testingcolor3);    
+}
+
+.main p{
+    color: var(--testingcolor4);
+}
