@@ -4,7 +4,7 @@ import styles from "./testingpage.module.css";
 import {useState, useEffect } from 'react'
 import Link from "next/link";
 
-export default function testingpage(){
+export default function TestingPage(){
 
     const [fact, setFact] = useState('');
     const [loading, setLoading] = useState(true);
