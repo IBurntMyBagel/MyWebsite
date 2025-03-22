@@ -128,6 +128,9 @@ export default function Home() {
             <li>
               Studying for the HackerRank SQL Beginner and Intermediate Exam.
             </li>
+            <li>
+              Creating this website, learning how to use Typescript, React, and APIs.
+            </li>
           </ol>
 
         </div>

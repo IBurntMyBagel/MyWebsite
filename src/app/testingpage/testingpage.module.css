@@ -6,7 +6,8 @@
     --testingcolor2: #464E47;
     --testingcolor3: #59A96A;
     --testingcolor4: #9BDEAC;
-    --testingcolor5: #CEB5A7; 
+    --testingcolor5: #E0DDCF;
+    --gunMetal: #293241; 
   
     --gray-rgb: 0, 0, 0;
     --gray-alpha-200: rgba(var(--gray-rgb), 0.08);
@@ -21,19 +22,143 @@
     justify-items: center;
     height: 100%;
     padding: 80px;
-    gap: 64px;
+    gap: 20px;
     font-family: var(--font-geist-sans);
   }
+  
+  @media (prefers-color-scheme: dark) {
+    .page {
+      --gray-rgb: 255, 255, 255;
+      --gray-alpha-200: rgba(var(--gray-rgb), 0.145);
+      --gray-alpha-100: rgba(var(--gray-rgb), 0.06);
+  
+      --button-primary-hover: #ccc;
+      --button-secondary-hover: #1a1a1a;
+    }
+  }
+  
+  
+  .header {
+    /*position: sticky;*/
+    grid-row-start: 1;
+    display: flex;
+    justify-content: space-between;
+    font-family: var(--font-geist-mono);
+    font-size: 14px;
+    gap: 16px;
+    padding: 20px;
+  }
+  
+  .navList {
+    display: flex;
+    list-style-type: none; /* Removes default bullet points */
+    /*gap: 20px; /* Optional: adds space between items */
+  }
+  
+  .navItem {
+    position: relative;
+    text-decoration: none;
+    color: var(--testingcolor2); /* You can change the color to match your theme */
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .navItem::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background-color: var(--testingcolor1);
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .navItem:hover::after {
+    transform: scaleX(1); /* Animate the underline */
+  }
+  
+  .navList li:not(:last-child)::after {
+    content: "|"; /* Adds a vertical bar after each item except the last one */
+    margin-left: 10px;
+    margin-right: 10px; /* Optional: adds space around the bar */
+    color: var(--testingcolor1); /* You can change the color of the bar */
+  }
+
+  
 
 
 .main {
+    grid-row-start: 2;
     color: var(--testingcolor5);
+    text-align: center;
+    
 }
 
 .main h1{
-    color: var(--testingcolor3);    
+    color: var(--testingcolor3);
+    font-size: 2em;    
 }
 
 .main p{
     color: var(--testingcolor4);
+    font-size: 0.8em;
 }
+
+
+
+
+
+
+.apiContainer {
+    grid-row-start: 3;
+    display: grid;
+    /*grid-template-columns: repeat(auto-f, minmax(250px, 1fr));*/
+    gap: 15px;
+}
+
+.apiBox {
+    padding: 15px;
+    background-color: var(--testingcolor5);
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px var(--gunMetal);
+    text-align: center;
+}
+
+.apiBox h1 {
+    margin: 0;
+    font-size: 2em;
+    /*font-family: var(--font-rubik);*/
+    color: var(--testingcolor2);
+  }
+  
+.apiBox p {
+    font-size: 0.8em;
+    margin-top: 10px;
+    /*font-family: var(--font-geist-mono);*/
+    color: var(--testingcolor2);
+  }
+  
+
+
+
+.factButton {
+    padding: 10px 15px;
+    
+    background-color:#476A6F;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+
+.factButton:hover {
+    background-color: #2f474b;
+  }
+
+.factText {
+    margin-top: 10px;
+    font-size: 1em;
+    color: #333;
+  }
