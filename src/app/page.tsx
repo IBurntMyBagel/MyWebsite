@@ -50,56 +50,19 @@ export default function Home() {
           </ul>
         </nav>
       </header>
-    
-      {/* Main portion of page */}
-      <main className={styles.main}>
+
+      <section className = {styles.headshotSection}>
         <Image
-          
-          src="/headshotProfile.jpg"
-          alt="Professional Headshot"
-          width={450}
-          height={360}
-          priority
-        />
-        {/*
-
-        
-        <ol>
-          <li>
-            Get editing <code>src/app/page.tsx</code>.
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.secondary}
-          >
-            Read our docs
-          </a>
-        </div>
-        */}
-      </main>
-    
-      
+            
+            src="/headshotProfile.jpg"
+            alt="Professional Headshot"
+            width={600}
+            height={480}
+            className = {styles.headshot}
+            priority
+          />
+      </section>
+     
     
 
       {/* Welcome Section */}
@@ -120,22 +83,39 @@ export default function Home() {
           </h1>
           <ol>
             <li>
-              Studying for the Comptia Network(n10-009)+ Certification Exam.
-            </li>
-            <li>
               Studying for the Comptia Security+ Certification Exam.
-            </li>
-            <li>
-              Studying for the HackerRank SQL Beginner and Intermediate Exam.
             </li>
             <li>
               Creating this website, learning how to use Typescript, React, and APIs.
             </li>
+            <li>
+              Studying for the HackerRank SQL Beginner and Intermediate Exam.
+            </li>
           </ol>
 
         </div>
-        
       </section>
+
+      <section className={styles.achievementSection}>
+        <Image
+          src="/comptiaNetworkPlusLogo.png"
+          alt="Comptia Network Plus Logo"
+          width={384}
+          height={351}
+          priority
+          style={{ width: '100%', height: 'auto', borderRadius: '10px' }}
+        />
+
+        <div>
+          <h1>Passed Comptia Network+ (N10-009) Certification!</h1>
+          <p>
+            On 4/2/2025 I passed my Network+ Certification! 🎉<br />
+            This experience taught me so much about networking fundamentals, implementation, operations, security, troubleshooting, and more.<br />
+            Verify <a href="https://www.certmetrics.com/comptia/public/verification.aspx" target="_blank" rel="noopener noreferrer">HERE</a> with code: RLXTC0Z56MB11T5D
+          </p>
+        </div>
+      </section>
+
 
 
       {/* Footer */}

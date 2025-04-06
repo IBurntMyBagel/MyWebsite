@@ -32,11 +32,12 @@ Colors
   --button-secondary-hover: #f2f2f2;
 
   display: grid;
-  grid-template-rows: 20px 1fr 1fr 20px;
+  grid-template-rows: 20px 1fr 1fr 1fr 20px;
+  /*header headshot welcome achievement footer sections*/
   align-items: center;
   justify-items: center;
   height: 100%;
-  padding: 80px;
+  padding: 20px;
   gap: 20px;
   font-family: var(--font-geist-sans);
 }
@@ -61,7 +62,7 @@ Colors
   font-family: var(--font-geist-mono);
   font-size: 14px;
   gap: 16px;
-  padding: 20px;
+  padding: 10px;
 }
 
 .navList {
@@ -100,39 +101,28 @@ Colors
   color: var(--testingcolor1); /* You can change the color of the bar */
 }
 
-
-.main {
+.headshotSection {
   display: flex;
-  flex-direction: column;
-  gap: 20px;
-  grid-row-start: 2;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
 }
 
-.main ol { /* ol stands for ordered list*/
-  font-family: var(--font-geist-mono);
-  padding-left: 0;
-  margin: 0;
-  font-size: 14px;
-  line-height: 24px;
-  letter-spacing: -0.01em;
-  list-style-position: inside;
-}
-
-.main li:not(:last-of-type) { /* li  is list*/
-  margin-bottom: 8px;
-}
-
-.main code { /*text section*/
-  font-family: inherit;
-  background: var(--gray-alpha-100);
-  padding: 2px 4px;
-  border-radius: 4px;
-  font-weight: 600;
+.headshot{
+  /*
+  width: 50vw;
+  height: auto;
+  */
+  max-width: 600;
+  max-height: 480;
+  
+  
+  box-shadow: 0 4px 8px rgba(54, 54, 54, 0.2);
 }
 
 /* Welcome section */
 .welcomeSection {
-  padding: 40px 20px;
+  padding: 20px;
   text-align: center;
   font-size: 1.5em;
   background-color: #FFFFFF; /* Optional transparency */
@@ -181,6 +171,40 @@ Colors
 }
 
 
+.achievementSection {
+  grid-row-start: 4;
+  display: grid;
+  grid-template-columns: 40% 50%;
+  /*Two columns split img and text*/
+  align-items: center;
+  gap: 10%;
+  padding: 40px;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(54, 54, 54, 0.2);
+  margin-top: 40px;
+}
+
+
+
+.achievementSection p {
+  font-size: 1.2em;
+  font-family: var(--font-rubik);
+  color: var(--testingcolor2);
+}
+.achievementSection h1 {
+  margin: 0;
+  font-size: 2em;
+  font-family: var(--font-rubik);
+  color: var(--testingcolor1);
+}
+
+
+
+
+
+
+
 
 .ctas { /*Call to action buttons*/
   display: flex;
@@ -219,7 +243,7 @@ a.secondary { /* secondary style */
 }
 
 .footer {
-  grid-row-start: 4;
+  grid-row-start: 5;
   display: flex;
   gap: 24px;
 }
@@ -258,12 +282,9 @@ a.secondary { /* secondary style */
     padding-bottom: 80px;
   }
 
-  .main {
-    align-items: center;
-  }
-
-  .main ol {
-    text-align: center;
+  .headshot {
+    width: 50vw;
+    max-width: 200px;
   }
 
   .ctas {
@@ -292,3 +313,37 @@ a.secondary { /* secondary style */
     filter: invert();
   }
 }
+
+
+
+/*
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  grid-row-start: 2;
+}
+
+.main ol { 
+font-family: var(--font-geist-mono);
+padding-left: 0;
+margin: 0;
+font-size: 14px;
+line-height: 24px;
+letter-spacing: -0.01em;
+list-style-position: inside;
+}
+
+.main li:not(:last-of-type) { 
+margin-bottom: 8px;
+}
+
+.main code {
+font-family: inherit;
+background: var(--gray-alpha-100);
+padding: 2px 4px;
+border-radius: 4px;
+font-weight: 600;
+}
+*/
