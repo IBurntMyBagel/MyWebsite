@@ -32,7 +32,7 @@ Colors
   --button-secondary-hover: #f2f2f2;
 
   display: grid;
-  grid-template-rows: 20px 1fr 1fr 1fr 20px;
+  grid-template-rows: 20px 1fr 1fr 1fr;
   /*header headshot welcome achievement footer sections*/
   align-items: center;
   justify-items: center;
@@ -243,7 +243,7 @@ a.secondary { /* secondary style */
 }
 
 .footer {
-  grid-row-start: 5;
+  /*grid-row-start: 5;*/
   display: flex;
   gap: 24px;
 }
