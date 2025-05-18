@@ -51,22 +51,52 @@ export default function Home() {
         </nav>
       </header>
 
-      <section className = {styles.headshotSection}>
-        <Image
+      <div className={styles.introSectionContainer}>
+        <section className={styles.introSection}>
+          <div className={styles.leftSide}>
+            <Image
+              src="/headshotProfile.jpg"
+              alt="Professional Headshot"
+              width={500}
+              height={400}
+              className={styles.headshot}
+              priority
+            />
+          </div>
+
+          <div className={styles.rightSide}>
+            {/*<h2>Hi, I'm Ryan!</h2>
+            <h2 className={`${styles.line1} ${styles.animTypewriter}`}>
+            Hi, I&apos;m Ryan!
+            </h2>
             
-            src="/headshotProfile.jpg"
-            alt="Professional Headshot"
-            width={600}
-            height={480}
-            className = {styles.headshot}
-            priority
-          />
-      </section>
-     
+            
+            */}
+            <h2 className={`${styles.typingLine} ${styles.typingAnimation}`}>
+              Hi, I&apos;m Ryan!
+            </h2>
+                      
+            
+            <p>
+              Hello! 👋 I&apos;m a Junior studying Computer Science 🤖 at RPI.<br />
+              I enjoy coding 💻, learning new technologies 📚, and building interesting projects 🛠️.<br />
+              Feel free to explore, check out my GitHub, or connect with me on LinkedIn!
+            </p>
+          </div>
+        </section>
+        
+        <img
+          src="/waves-cropped.svg"
+          alt="Decorative wave divider"
+          className={styles.wave}
+        />
+    </div>
+
     
 
       {/* Welcome Section */}
       <section className={styles.welcomeSection}>
+        {/*
         <div className = {styles.welcomeSubSection}>
           <h1>
             Welcome to My Website!
@@ -77,6 +107,7 @@ export default function Home() {
             Feel free to explore, check out my Github, or connect with me on LinkedIn!!
           </p>
         </div>
+        */}
         <div className = {styles.welcomeSubSection}>
           <h1>
             Current Projects I&apos;m Working On:
