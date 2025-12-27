@@ -22,8 +22,8 @@ export default function Home() {
         <div className={styles.welcomeSubSection}>
           <h1>Welcome to My Website!</h1>
           <p>
-            Hello! 👋 I&apos;m Ryan Tsang, a Senior studying Computer Science at
-            RPI. I enjoy coding, learning new technologies, and building
+            Hello! 👋 I&apos;m Ryan Tsang, a Senior at RPI studying Computer Science. 
+            I enjoy coding, learning new technologies, and building
             interesting projects.
           </p>
         </div>

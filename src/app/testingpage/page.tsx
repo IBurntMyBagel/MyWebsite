@@ -54,7 +54,7 @@ export default function TestingPage(){
                         Random Fun Fact
                     </h1>
                     <p>
-                        Click the button to ge a random useless fact!
+                        Click the button to get a random useless fact!
                     </p>
                     <button onClick = {getFact} className = {styles.factButton}>
                         {loading ? 'Loading...': 'Get Fact'}
@@ -63,6 +63,11 @@ export default function TestingPage(){
                     {fact && <p className = {styles.factText}>{fact}</p>}
                 </div>
 
+                <div className = {styles.apiBox}>
+                    <h1>
+                        Clock Example
+                    </h1>
+                </div>
                 {/* Future API */}
                 {/* Clock example */}
                 {/* Weather */}

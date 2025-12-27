@@ -59,29 +59,33 @@
 
 .achievementSection {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 40% 60%;
   gap: 40px;
   padding: 40px;
   background-color: #ffffff;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(54, 54, 54, 0.2);
+  align-items: center;
 }
 
 .achievementSection img {
   width: 400px;
   height: auto;
   border-radius: 10px;
+  justify-self: center;
 }
 
 .achievementSection h1 {
   font-family: var(--font-rubik);
   color: var(--testingcolor1);
+  padding: 20px;
 }
 
 .achievementSection p {
   font-family: var(--font-rubik);
   color: var(--testingcolor2);
   line-height: 1.6;
+  padding: 20px;
 }
 
 /* ---------------- MOBILE ---------------- */
