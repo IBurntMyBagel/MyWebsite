@@ -75,3 +75,13 @@ a {
   font-size: 0.9rem;
 }
 
+/* Link Styles */
+.text-link {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  color: var(--testingcolor1);
+}
+
+.text-link:hover {
+  text-decoration-thickness: 2px;
+}
