@@ -84,11 +84,11 @@ export default function Home() {
           <p>
             Just finished my Junior Summer internship at the U.S. District Courts as an IT Intern! It was lawsome 😎 🧑‍⚖️
             <br /><br />
-            During this internship, I had the opportunity to work on multiple projects that benefit the Federal Court, including: vastly improving the in-house developed public information kiosk fleet to include an interactive "Court History" module, pulling and terminating network drops, performing production router upgrades after hours, working inside network closets to document, validate, and ensure that patch cables met compliance/continuity standards, and updating Cisco 9400 series switches interface descriptions.
+            During this internship, I had the opportunity to work on multiple projects that benefit the Federal Court, including: vastly improving the in-house developed public information kiosk fleet to include an interactive &quot;Court History&quot; module, pulling and terminating network drops, performing production router upgrades after hours, working inside network closets to document, validate, and ensure that patch cables met compliance/continuity standards, and updating Cisco 9400 series switches interface descriptions.
             <br /><br />
             This internship began with me shadowing helpdesk technicians and ended with me working alongside them as I addressed helpdesk tickets for both federal judges, law clerks, and court staff. I was able to gain experience in working on desktop virtualization, wiping and re-imaging devices, and troubleshooting issues in the Windows 11 environment.
             <br /><br />
-            I want to thank my mentor and the IT Director Mr. Newton for your support and always taking the time out of your schedule to teach me more about networking and allowing me to get experience working within the court's network closets, server room, and teaching us more about networking fundamentals. Thank you to the New Haven IT Team, Hartford IT team, and Bridgeport IT team for always being supportive and making each project an amazing learning opportunity!
+            I want to thank my mentor and the IT Director Mr. Newton for your support and always taking the time out of your schedule to teach me more about networking and allowing me to get experience working within the court&apos;s network closets, server room, and teaching us more about networking fundamentals. Thank you to the New Haven IT Team, Hartford IT team, and Bridgeport IT team for always being supportive and making each project an amazing learning opportunity!
           </p>
         </div>
       </section>
@@ -108,7 +108,7 @@ export default function Home() {
             <br /><br />
             Over the course of 3 month I studied for this certification while on my internship and passed!
             <br /><br />
-            Thanks to Jason Dion's course and exam kits on Udemy and Professor Messer's videos on YouTube I was able to learn about General Security Concepts, Threats, Vulnerabilities, Mitigation Techniques, Security Architecture, Security Operations, and Security Program Management.
+            Thanks to Jason Dion&apos;s course and exam kits on Udemy and Professor Messer&apos;s videos on YouTube I was able to learn about General Security Concepts, Threats, Vulnerabilities, Mitigation Techniques, Security Architecture, Security Operations, and Security Program Management.
             <br /><br />
             Thanks to CompTIA for providing a valuable certification to break into the IT field and further develop my cybersecurity skills! 🤖
             <br /><br />
