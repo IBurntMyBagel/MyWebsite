@@ -22,7 +22,9 @@
 
 /* ---------------- HEADSHOT ---------------- */
 
-.headshotSection {
+.introSection {
+  border-radius: 10px 10px 1px 1px;
+  box-shadow: 0 4px 8px rgba(54, 54, 54, 0.2);
   display: flex;
   justify-content: center;
 }
